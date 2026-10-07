@@ -11,8 +11,9 @@
       "description": "Tuer une entite remplace ta vie maximale par la sienne. Jamais cumulatif : seul le dernier kill compte. Tue un Ender Dragon, tu as 100 coeurs. Tue un poulet juste apres, tu en as 2.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
-      "jar": "JusOpa-LastKillHearts-1.0.0.jar"
+      "short": "https://www.youtube.com/shorts/iNF-Fgvtygw",
+      "jar": "JusOpa-LastKillHearts-1.0.0.jar",
+      "listed": true
     },
     {
       "id": "chained",
@@ -23,8 +24,9 @@
       "description": "Une vraie corde vanilla relie les deux joueurs. Ils partagent la barre de vie, la faim, et quand l'un meurt l'autre meurt aussi. Impossible de s'eloigner.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
-      "jar": "JusOpa-Chained-1.0.0.jar"
+      "short": "https://www.youtube.com/shorts/DGD5kZY-XPY",
+      "jar": "JusOpa-Chained-1.0.0.jar",
+      "listed": true
     },
     {
       "id": "doublespawn",
@@ -36,7 +38,9 @@
       "version": "1.0.0",
       "mc": "26.1.2",
       "short": "",
-      "jar": "JusOpa-DoubleSpawn-1.0.0.jar"
+      "jar": "JusOpa-DoubleSpawn-1.0.0.jar",
+      "listed": false,
+      "eta": "vendredi"
     },
     {
       "id": "blockvanish",
@@ -47,8 +51,9 @@
       "description": "Tu casses une pierre, toute la pierre du monde disparait. Le nettoyage continue au chargement des chunks, donc meme les zones pas encore visitees sont concernees.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
-      "jar": "JusOpa-BlockVanish-1.0.0.jar"
+      "short": "https://www.youtube.com/shorts/q1Xc1Cicu3s",
+      "jar": "JusOpa-BlockVanish-1.0.0.jar",
+      "listed": true
     },
     {
       "id": "blockunderyou",
@@ -60,7 +65,9 @@
       "version": "1.0.0",
       "mc": "26.1.2",
       "short": "",
-      "jar": "JusOpa-BlockUnderYou-1.0.0.jar"
+      "jar": "JusOpa-BlockUnderYou-1.0.0.jar",
+      "listed": false,
+      "eta": "samedi"
     },
     {
       "id": "jusopapanel",
@@ -72,7 +79,8 @@
       "version": "1.0.0",
       "mc": "26.1.2",
       "short": "",
-      "jar": "JusOpa-ControlPanel-1.0.0.jar"
+      "jar": "JusOpa-ControlPanel-1.0.0.jar",
+      "listed": true
     }
   ]
 }

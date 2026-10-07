@@ -4,6 +4,8 @@ from lib_mods import load, tag, dl_url, HUB
 
 d = load()
 repo = d['repo']
+mods = [m for m in d['mods'] if m.get('listed', True)]
+attente = [m for m in d['mods'] if not m.get('listed', True)]
 inv = d.get('discord_invite') or ''
 
 L = []
@@ -20,7 +22,7 @@ L.append('## Les mods')
 L.append('')
 L.append('| Mod | Ce que ca fait | Version | MC | Short | Telecharger |')
 L.append('|---|---|---|---|---|---|')
-for m in d['mods']:
+for m in mods:
     short = f'[voir]({m["short"]})' if m.get('short') else '_a venir_'
     L.append(f'| {m["emoji"]} **{m["name"]}** | {m["tagline"]} | `{m["version"]}` | `{m["mc"]}` | {short} | [.jar]({dl_url(repo, m)}) |')
 L.append('')
@@ -37,7 +39,7 @@ L.append('Tu peux installer plusieurs mods en meme temps. Dans ce cas, prends au
 L.append('')
 L.append('## Details')
 L.append('')
-for m in d['mods']:
+for m in mods:
     L.append(f'### {m["emoji"]} {m["name"]}')
     L.append('')
     L.append(m['description'])
@@ -47,6 +49,12 @@ for m in d['mods']:
         L.append(f'- Short : {m["short"]}')
     L.append(f'- [Telecharger {m["jar"]}]({dl_url(repo, m)})')
     L.append('')
+if attente:
+    L.append('## Bientot')
+    L.append('')
+    for m in attente:
+        L.append('%s **%s** : %s (short %s)' % (m['emoji'], m['name'], m['tagline'], m.get('eta', 'a venir')))
+    L.append('')
 L.append('---')
 L.append('')
 L.append('Mods sous licence MIT. Fais-en ce que tu veux.')
@@ -54,4 +62,4 @@ L.append('')
 
 with open(os.path.join(HUB, 'README.md'), 'w', encoding='utf-8') as f:
     f.write('\n'.join(L))
-print('README.md regenere (%d mods)' % len(d['mods']))
+print('README.md regenere : %d mods visibles, %d en attente' % (len(mods), len(attente)))

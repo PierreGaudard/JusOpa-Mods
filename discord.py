@@ -1,17 +1,20 @@
 """Poste les fiches mods dans Discord via webhook.
 
 Le webhook est lu dans webhook.txt (jamais commite).
+Les mods "listed": false sont ignores (short pas encore en ligne).
+
 Usage:
-  python discord.py              -> poste tous les mods
-  python discord.py chained      -> poste seulement ce(s) mod(s)
-  python discord.py --index      -> poste le message d'index (liste de tout)
+  python discord.py              -> toutes les fiches visibles
+  python discord.py chained      -> seulement ce(s) mod(s)
+  python discord.py --index      -> le message recapitulatif
+  python discord.py --all        -> inclut aussi les mods non sortis
 """
 import json, os, sys, urllib.request
 from lib_mods import load, dl_url, HUB
 
 WH = os.path.join(HUB, 'webhook.txt')
 if not os.path.exists(WH):
-    sys.exit('Cree webhook.txt avec l\'URL du webhook Discord dedans.')
+    sys.exit("Cree webhook.txt avec l'URL du webhook Discord dedans.")
 url = open(WH, encoding='utf-8').read().strip()
 
 d = load()
@@ -26,35 +29,52 @@ def post(payload):
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read().decode('utf-8'))
 
-args = [a for a in sys.argv[1:]]
+args = sys.argv[1:]
+force = '--all' in args
+args = [a for a in args if a != '--all']
+visible = lambda m: force or m.get('listed', True)
 
 if '--index' in args:
     lines = []
     for m in d['mods']:
-        s = f' - [le short]({m["short"]})' if m.get('short') else ''
-        lines.append(f'{m["emoji"]} **{m["name"]}** - {m["tagline"]}\n[Telecharger]({dl_url(repo, m)}){s}')
+        if not visible(m):
+            continue
+        block = '{} **{}**\n{}\n[Telecharger le .jar]({})'.format(
+            m['emoji'], m['name'], m['tagline'], dl_url(repo, m))
+        if m.get('short'):
+            block += '\n[Voir le short]({})'.format(m['short'])
+        lines.append(block)
     post({'embeds': [{
-        'title': 'Tous les mods JusOpa',
+        'title': 'Les mods JusOpa',
         'description': '\n\n'.join(lines),
         'color': COLOR,
-        'footer': {'text': f'Minecraft {d["mods"][0]["mc"]} - Fabric | Toutes les versions : github.com/{repo}/releases'}}]})
+        'footer': {'text': 'Minecraft {} sous Fabric. Toutes les versions sur github.com/{}/releases'.format(
+            d['mods'][0]['mc'], repo)}}]})
     print('[OK] index poste')
     sys.exit(0)
 
 only = set(a.lower() for a in args)
-mods = [m for m in d['mods'] if not only or m['id'] in only or m['dir'].lower() in only]
+if only:
+    mods = [m for m in d['mods'] if m['id'] in only or m['dir'].lower() in only]
+    inconnus = only - {m['id'] for m in mods} - {m['dir'].lower() for m in mods}
+    if inconnus:
+        sys.exit('Mod inconnu : ' + ', '.join(sorted(inconnus)))
+else:
+    mods = [m for m in d['mods'] if visible(m)]
+
 for m in mods:
     fields = [
-        {'name': 'Version', 'value': f'`{m["version"]}`', 'inline': True},
-        {'name': 'Minecraft', 'value': f'`{m["mc"]}` (Fabric)', 'inline': True},
+        {'name': 'Version', 'value': '`{}`'.format(m['version']), 'inline': True},
+        {'name': 'Minecraft', 'value': '`{}` sous Fabric'.format(m['mc']), 'inline': True},
     ]
     if m.get('short'):
-        fields.append({'name': 'Le short', 'value': f'[Regarder]({m["short"]})', 'inline': True})
+        fields.append({'name': 'Le short', 'value': '[Regarder]({})'.format(m['short']), 'inline': True})
     post({'embeds': [{
-        'title': f'{m["emoji"]} {m["name"]}',
-        'url': m.get('short') or f'https://github.com/{repo}',
+        'title': '{} {}'.format(m['emoji'], m['name']),
+        'url': m.get('short') or 'https://github.com/{}'.format(repo),
         'description': m['description'],
         'color': COLOR,
-        'fields': fields + [{'name': 'Telechargement', 'value': f'[{m["jar"]}]({dl_url(repo, m)})'}],
-        'footer': {'text': 'Fabric Loader + Fabric API requis - depose le .jar dans ton dossier mods'}}]})
-    print(f'[OK] {m["name"]} poste')
+        'fields': fields + [{'name': 'Telechargement',
+                             'value': '[{}]({})'.format(m['jar'], dl_url(repo, m))}],
+        'footer': {'text': 'Fabric Loader + Fabric API requis. Depose le .jar dans ton dossier mods.'}}]})
+    print('[OK] {} poste'.format(m['name']))
