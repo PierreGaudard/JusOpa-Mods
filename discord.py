@@ -21,11 +21,16 @@ d = load()
 repo = d['repo']
 COLOR = 0x57F287
 
-def post(payload):
+IDX = os.path.join(HUB, 'index_message.txt')
+
+def send(payload, message_id=None):
+    """Poste un message, ou modifie celui dont on connait l'id."""
+    target = url + ('/messages/' + message_id if message_id else '?wait=true')
     req = urllib.request.Request(
-        url + '?wait=true',
+        target,
         data=json.dumps(payload).encode('utf-8'),
-        headers={'Content-Type': 'application/json', 'User-Agent': 'JusOpaModsHub/1.0'})
+        headers={'Content-Type': 'application/json', 'User-Agent': 'JusOpaModsHub/1.0'},
+        method='PATCH' if message_id else 'POST')
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read().decode('utf-8'))
 
@@ -44,13 +49,23 @@ if '--index' in args:
         if m.get('short'):
             block += '\n[Voir le short]({})'.format(m['short'])
         lines.append(block)
-    post({'embeds': [{
+    payload = {'embeds': [{
         'title': 'Les mods JusOpa',
         'description': '\n\n'.join(lines),
         'color': COLOR,
         'footer': {'text': 'Minecraft {} sous Fabric. Toutes les versions sur github.com/{}/releases'.format(
-            d['mods'][0]['mc'], repo)}}]})
-    print('[OK] index poste')
+            d['mods'][0]['mc'], repo)}}]}
+    mid = open(IDX, encoding='utf-8').read().strip() if os.path.exists(IDX) else None
+    try:
+        msg = send(payload, mid)
+        print('[OK] index modifie' if mid else '[OK] index poste')
+    except urllib.error.HTTPError as err:
+        if mid and err.code == 404:
+            msg = send(payload)          # message supprime cote Discord, on en repost un
+            print("[OK] index repose, l'ancien avait ete supprime")
+        else:
+            raise
+    open(IDX, 'w', encoding='utf-8').write(msg['id'])
     sys.exit(0)
 
 only = set(a.lower() for a in args)
@@ -69,7 +84,7 @@ for m in mods:
     ]
     if m.get('short'):
         fields.append({'name': 'Le short', 'value': '[Regarder]({})'.format(m['short']), 'inline': True})
-    post({'embeds': [{
+    send({'embeds': [{
         'title': '{} {}'.format(m['emoji'], m['name']),
         'url': m.get('short') or 'https://github.com/{}'.format(repo),
         'description': m['description'],
