@@ -5,7 +5,7 @@ from lib_mods import load, tag, dl_url, HUB
 d = load()
 repo = d['repo']
 mods = [m for m in d['mods'] if m.get('listed', True)]
-attente = [m for m in d['mods'] if not m.get('listed', True)]
+attente = [m for m in d['mods'] if not m.get('listed', True)]  # jamais affiches
 inv = d.get('discord_invite') or ''
 
 L = []
@@ -48,12 +48,6 @@ for m in mods:
     if m.get('short'):
         L.append(f'- Short : {m["short"]}')
     L.append(f'- [Telecharger {m["jar"]}]({dl_url(repo, m)})')
-    L.append('')
-if attente:
-    L.append('## Bientot')
-    L.append('')
-    for m in attente:
-        L.append('%s **%s** : %s (short %s)' % (m['emoji'], m['name'], m['tagline'], m.get('eta', 'a venir')))
     L.append('')
 L.append('---')
 L.append('')

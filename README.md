@@ -57,11 +57,6 @@ Interface de controle ouverte avec F8. Permet d'activer ou desactiver chaque mod
 - Version `1.0.0` pour Minecraft `26.1.2` (Fabric)
 - [Telecharger JusOpa-ControlPanel-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/jusopapanel-v1.0.0/JusOpa-ControlPanel-1.0.0.jar)
 
-## Bientot
-
-👾 **Double Spawn** : Tuer un mob en fait apparaitre deux autres au hasard. (short vendredi)
-🧱 **Block Under You** : Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber. (short samedi)
-
 ---
 
 Mods sous licence MIT. Fais-en ce que tu veux.

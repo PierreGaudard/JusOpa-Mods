@@ -1,4 +1,5 @@
 webhook.txt
 index_message.txt
+messages.json
 *.jar
 __pycache__/
