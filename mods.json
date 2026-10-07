@@ -1,0 +1,78 @@
+{
+  "repo": "PierreGaudard/JusOpa-Mods",
+  "discord_invite": "",
+  "mods": [
+    {
+      "id": "lastkillhearts",
+      "dir": "LastKillHearts",
+      "name": "Last Kill Hearts",
+      "emoji": "❤️",
+      "tagline": "Ta vie max devient celle du dernier mob tue.",
+      "description": "Tuer une entite remplace ta vie maximale par la sienne. Jamais cumulatif : seul le dernier kill compte. Tue un Ender Dragon, tu as 100 coeurs. Tue un poulet juste apres, tu en as 2.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-LastKillHearts-1.0.0.jar"
+    },
+    {
+      "id": "chained",
+      "dir": "Chained",
+      "name": "Chained",
+      "emoji": "⛓️",
+      "tagline": "Deux joueurs lies par une laisse. Meme vie, meme faim, meme mort.",
+      "description": "Une vraie corde vanilla relie les deux joueurs. Ils partagent la barre de vie, la faim, et quand l'un meurt l'autre meurt aussi. Impossible de s'eloigner.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-Chained-1.0.0.jar"
+    },
+    {
+      "id": "doublespawn",
+      "dir": "DoubleSpawn",
+      "name": "Double Spawn",
+      "emoji": "👾",
+      "tagline": "Tuer un mob en fait apparaitre deux autres au hasard.",
+      "description": "Chaque entite naturelle tuee fait apparaitre deux monstres aleatoires. Les monstres ainsi apparus sont steriles : la chaine s'arrete toujours a un niveau, sinon le monde explose.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-DoubleSpawn-1.0.0.jar"
+    },
+    {
+      "id": "blockvanish",
+      "dir": "BlockVanish",
+      "name": "Block Vanish",
+      "emoji": "💨",
+      "tagline": "Casser un bloc efface TOUS les blocs du meme type dans le monde.",
+      "description": "Tu casses une pierre, toute la pierre du monde disparait. Le nettoyage continue au chargement des chunks, donc meme les zones pas encore visitees sont concernees.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-BlockVanish-1.0.0.jar"
+    },
+    {
+      "id": "blockunderyou",
+      "dir": "BlockUnderYou",
+      "name": "Block Under You",
+      "emoji": "🧱",
+      "tagline": "Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber.",
+      "description": "Tant que tu tiens un bloc en main, il se pose automatiquement sous tes pieds quand tu avances. Marcher sur le vide devient possible.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-BlockUnderYou-1.0.0.jar"
+    },
+    {
+      "id": "jusopapanel",
+      "dir": "ControlPanel",
+      "name": "Control Panel",
+      "emoji": "🎛️",
+      "tagline": "Touche F8 : active ou desactive chaque mod JusOpa pour toute la map.",
+      "description": "Interface de controle ouverte avec F8. Permet d'activer ou desactiver chaque mod JusOpa en direct, pour tous les joueurs de la carte. Recommande si tu installes plusieurs mods a la fois.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-ControlPanel-1.0.0.jar"
+    }
+  ]
+}
