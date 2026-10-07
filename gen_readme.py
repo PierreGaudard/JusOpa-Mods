@@ -35,7 +35,10 @@ L.append('4. Lance Minecraft avec le profil Fabric')
 L.append('')
 L.append(r'> Dossier `mods` : `%APPDATA%\.minecraft\mods` sur Windows.')
 L.append('')
-L.append('Tu peux installer plusieurs mods en meme temps. Dans ce cas, prends aussi le **Control Panel** : la touche `F8` te laisse activer ou desactiver chaque mod en direct.')
+if any(m['id'] == 'jusopapanel' for m in mods):
+    L.append('Tu peux installer plusieurs mods en meme temps. Dans ce cas, prends aussi le **Control Panel** : la touche `F8` te laisse activer ou desactiver chaque mod en direct.')
+else:
+    L.append('Tu peux installer plusieurs mods en meme temps, ils fonctionnent ensemble.')
 L.append('')
 L.append('## Details')
 L.append('')

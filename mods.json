@@ -80,7 +80,8 @@
       "mc": "26.1.2",
       "short": "",
       "jar": "JusOpa-ControlPanel-1.0.0.jar",
-      "listed": true
+      "listed": false,
+      "note": "Outil interne de Pierre. Ne sera jamais publie, meme quand les autres mods sortent."
     }
   ]
 }
