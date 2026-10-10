@@ -37,10 +37,9 @@
       "description": "Chaque entite naturelle tuee fait apparaitre deux monstres aleatoires. Les monstres ainsi apparus sont steriles : la chaine s'arrete toujours a un niveau, sinon le monde explose.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/wqaonkB54Y4",
       "jar": "JusOpa-DoubleSpawn-1.0.0.jar",
-      "listed": false,
-      "eta": "vendredi"
+      "listed": true
     },
     {
       "id": "blockvanish",
@@ -64,10 +63,9 @@
       "description": "Tant que tu tiens un bloc en main, il se pose automatiquement sous tes pieds quand tu avances. Marcher sur le vide devient possible.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/1UhiEIShHX8",
       "jar": "JusOpa-BlockUnderYou-1.0.0.jar",
-      "listed": false,
-      "eta": "samedi"
+      "listed": true
     },
     {
       "id": "jusopapanel",
@@ -82,6 +80,84 @@
       "jar": "JusOpa-ControlPanel-1.0.0.jar",
       "listed": false,
       "note": "Outil interne de Pierre. Ne sera jamais publie, meme quand les autres mods sortent."
+    },
+    {
+      "id": "lyceens",
+      "dir": "Lyceens",
+      "name": "Lyceens",
+      "emoji": "🎒",
+      "tagline": "Chaque bloc casse fait apparaitre une vague de lyceens de plus en plus grosse.",
+      "description": "Le premier bloc casse fait apparaitre un lyceen, le deuxieme deux, le troisieme trois. Ils ne brulent pas au soleil, ne disparaissent jamais et se teleportent pour te rattraper. Plafond a 100.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-Lyceens-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "nowayback",
+      "dir": "NoWayBack",
+      "name": "No Way Back",
+      "emoji": "🧱",
+      "tagline": "Chaque case que tu quittes se mure derriere toi.",
+      "description": "Un pas en avant et une colonne de pierre de 20 blocs jaillit a l'endroit que tu viens de quitter. Tu ne meurs pas : le danger, c'est de t'enfermer tout seul.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-NoWayBack-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "touchtnt",
+      "dir": "TouchTNT",
+      "name": "Touch TNT",
+      "emoji": "🧨",
+      "tagline": "Tout ce que tu touches devient de la TNT.",
+      "description": "Le sol sous tes pieds, les murs que tu froles, le bloc que tu frappes : tout devient de la TNT. Elle n'est pas allumee, elle attend. Un briquet suffit.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-TouchTNT-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "giantworld",
+      "dir": "GiantWorld",
+      "name": "Giant World",
+      "emoji": "🔍",
+      "tagline": "Tu deviens minuscule, donc tout devient gigantesque.",
+      "description": "Tu passes a un seizieme de ta taille : un bloc de terre te depasse de seize fois, un poulet fait la taille d'une maison. Les autres joueurs peuvent garder leur taille normale et devenir les geants.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-GiantWorld-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "inverted",
+      "dir": "Inverted",
+      "name": "Inverted",
+      "emoji": "🔄",
+      "tagline": "Toutes les regles de base du jeu sont inversees.",
+      "description": "Treize regles de base inversees. L'eau brule, la lave est inoffensive. Les zombies brulent la nuit. Les monstres apparaissent dans la lumiere, donc une torche les attire. Les poissons vivent sur terre. On mine a mains nues. Les lits explosent dans l'Overworld. La TNT et les creepers enferment au lieu de creuser. Les blazes lachent des perles de l'End. Le lait empoisonne et l'or enrage les piglins.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-Inverted-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "breakonce",
+      "dir": "BreakOnce",
+      "name": "Break Once",
+      "emoji": "⛏️",
+      "tagline": "Chaque type de bloc ne peut etre casse qu'une seule fois.",
+      "description": "Tu casses une pierre : c'etait la seule pierre que tu casseras jamais. Toute la pierre du monde devient incassable, pour toujours. Puis le chene, puis la terre. Chaque coup de pioche devient une decision.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-BreakOnce-1.0.0.jar",
+      "listed": false
     }
   ]
 }

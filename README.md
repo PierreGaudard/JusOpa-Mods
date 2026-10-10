@@ -10,7 +10,9 @@ Les mods Minecraft des shorts **JusOpa**. Un mod = un short.
 |---|---|---|---|---|---|
 | ❤️ **Last Kill Hearts** | Ta vie max devient celle du dernier mob tue. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/iNF-Fgvtygw) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/lastkillhearts-v1.0.0/JusOpa-LastKillHearts-1.0.0.jar) |
 | ⛓️ **Chained** | Deux joueurs lies par une laisse. Meme vie, meme faim, meme mort. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/DGD5kZY-XPY) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/chained-v1.0.0/JusOpa-Chained-1.0.0.jar) |
+| 👾 **Double Spawn** | Tuer un mob en fait apparaitre deux autres au hasard. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/wqaonkB54Y4) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/doublespawn-v1.0.0/JusOpa-DoubleSpawn-1.0.0.jar) |
 | 💨 **Block Vanish** | Casser un bloc efface TOUS les blocs du meme type dans le monde. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/q1Xc1Cicu3s) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockvanish-v1.0.0/JusOpa-BlockVanish-1.0.0.jar) |
+| 🧱 **Block Under You** | Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/1UhiEIShHX8) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.0.0/JusOpa-BlockUnderYou-1.0.0.jar) |
 
 ## Installation
 
@@ -41,6 +43,14 @@ Une vraie corde vanilla relie les deux joueurs. Ils partagent la barre de vie, l
 - Short : https://www.youtube.com/shorts/DGD5kZY-XPY
 - [Telecharger JusOpa-Chained-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/chained-v1.0.0/JusOpa-Chained-1.0.0.jar)
 
+### 👾 Double Spawn
+
+Chaque entite naturelle tuee fait apparaitre deux monstres aleatoires. Les monstres ainsi apparus sont steriles : la chaine s'arrete toujours a un niveau, sinon le monde explose.
+
+- Version `1.0.0` pour Minecraft `26.1.2` (Fabric)
+- Short : https://www.youtube.com/shorts/wqaonkB54Y4
+- [Telecharger JusOpa-DoubleSpawn-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/doublespawn-v1.0.0/JusOpa-DoubleSpawn-1.0.0.jar)
+
 ### 💨 Block Vanish
 
 Tu casses une pierre, toute la pierre du monde disparait. Le nettoyage continue au chargement des chunks, donc meme les zones pas encore visitees sont concernees.
@@ -48,6 +58,14 @@ Tu casses une pierre, toute la pierre du monde disparait. Le nettoyage continue 
 - Version `1.0.0` pour Minecraft `26.1.2` (Fabric)
 - Short : https://www.youtube.com/shorts/q1Xc1Cicu3s
 - [Telecharger JusOpa-BlockVanish-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockvanish-v1.0.0/JusOpa-BlockVanish-1.0.0.jar)
+
+### 🧱 Block Under You
+
+Tant que tu tiens un bloc en main, il se pose automatiquement sous tes pieds quand tu avances. Marcher sur le vide devient possible.
+
+- Version `1.0.0` pour Minecraft `26.1.2` (Fabric)
+- Short : https://www.youtube.com/shorts/1UhiEIShHX8
+- [Telecharger JusOpa-BlockUnderYou-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.0.0/JusOpa-BlockUnderYou-1.0.0.jar)
 
 ---
 
