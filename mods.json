@@ -59,12 +59,12 @@
       "dir": "BlockUnderYou",
       "name": "Block Under You",
       "emoji": "🧱",
-      "tagline": "Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber.",
-      "description": "Tant que tu tiens un bloc en main, il se pose automatiquement sous tes pieds quand tu avances. Marcher sur le vide devient possible.",
-      "version": "1.0.0",
+      "tagline": "Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber, et le monde grouille de mobs.",
+      "description": "Tant que tu tiens un bloc en main, il se pose automatiquement sous tes pieds quand tu avances. Marcher sur le vide devient possible.\n\nDepuis la 1.1.0, le monde est aussi bien plus peuple : 3 golems dans un village au lieu d'un, deux fois plus de villageois, des grottes qui grouillent, et les plafonds de population du jeu releves d'autant. Tout est reglable dans config/blockunderyou.json, et la densite se coupe a part avec moreMobs.",
+      "version": "1.1.0",
       "mc": "26.1.2",
       "short": "https://www.youtube.com/shorts/1UhiEIShHX8",
-      "jar": "JusOpa-BlockUnderYou-1.0.0.jar",
+      "jar": "JusOpa-BlockUnderYou-1.1.0.jar",
       "listed": true
     },
     {

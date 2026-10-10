@@ -12,7 +12,7 @@ Les mods Minecraft des shorts **JusOpa**. Un mod = un short.
 | ⛓️ **Chained** | Deux joueurs lies par une laisse. Meme vie, meme faim, meme mort. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/DGD5kZY-XPY) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/chained-v1.0.0/JusOpa-Chained-1.0.0.jar) |
 | 👾 **Double Spawn** | Tuer un mob en fait apparaitre deux autres au hasard. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/wqaonkB54Y4) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/doublespawn-v1.0.0/JusOpa-DoubleSpawn-1.0.0.jar) |
 | 💨 **Block Vanish** | Casser un bloc efface TOUS les blocs du meme type dans le monde. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/q1Xc1Cicu3s) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockvanish-v1.0.0/JusOpa-BlockVanish-1.0.0.jar) |
-| 🧱 **Block Under You** | Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/1UhiEIShHX8) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.0.0/JusOpa-BlockUnderYou-1.0.0.jar) |
+| 🧱 **Block Under You** | Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber, et le monde grouille de mobs. | `1.1.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/1UhiEIShHX8) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.1.0/JusOpa-BlockUnderYou-1.1.0.jar) |
 
 ## Installation
 
@@ -63,9 +63,11 @@ Tu casses une pierre, toute la pierre du monde disparait. Le nettoyage continue 
 
 Tant que tu tiens un bloc en main, il se pose automatiquement sous tes pieds quand tu avances. Marcher sur le vide devient possible.
 
-- Version `1.0.0` pour Minecraft `26.1.2` (Fabric)
+Depuis la 1.1.0, le monde est aussi bien plus peuple : 3 golems dans un village au lieu d'un, deux fois plus de villageois, des grottes qui grouillent, et les plafonds de population du jeu releves d'autant. Tout est reglable dans config/blockunderyou.json, et la densite se coupe a part avec moreMobs.
+
+- Version `1.1.0` pour Minecraft `26.1.2` (Fabric)
 - Short : https://www.youtube.com/shorts/1UhiEIShHX8
-- [Telecharger JusOpa-BlockUnderYou-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.0.0/JusOpa-BlockUnderYou-1.0.0.jar)
+- [Telecharger JusOpa-BlockUnderYou-1.1.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.1.0/JusOpa-BlockUnderYou-1.1.0.jar)
 
 ---
 
