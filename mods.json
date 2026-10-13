@@ -68,6 +68,19 @@
       "listed": true
     },
     {
+      "id": "bedrockchunk",
+      "dir": "BedrockChunk",
+      "name": "Bedrock Chunk",
+      "emoji": "⬛",
+      "tagline": "Casser un bloc petrifie tout le chunk en bedrock.",
+      "description": "Tu casses un bloc, et le chunk entier devient de la bedrock, du ciel au fond. L'air reste de l'air et l'eau reste de l'eau : les grottes gardent leur vide et tu ne peux pas etre enseveli. Les blocs traverses par un joueur sont epargnes. Tout se regle dans config/bedrockchunk.json, y compris la version pleine qui petrifie aussi l'air.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "https://www.youtube.com/shorts/LIpZI3sQEtc",
+      "jar": "JusOpa-BedrockChunk-1.0.0.jar",
+      "listed": true
+    },
+    {
       "id": "jusopapanel",
       "dir": "ControlPanel",
       "name": "Control Panel",
@@ -142,9 +155,9 @@
       "description": "Treize regles de base inversees. L'eau brule, la lave est inoffensive. Les zombies brulent la nuit. Les monstres apparaissent dans la lumiere, donc une torche les attire. Les poissons vivent sur terre. On mine a mains nues. Les lits explosent dans l'Overworld. La TNT et les creepers enferment au lieu de creuser. Les blazes lachent des perles de l'End. Le lait empoisonne et l'or enrage les piglins.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/QEGcMTPwnaE",
       "jar": "JusOpa-Inverted-1.0.0.jar",
-      "listed": false
+      "listed": true
     },
     {
       "id": "breakonce",

@@ -13,6 +13,8 @@ Les mods Minecraft des shorts **JusOpa**. Un mod = un short.
 | 👾 **Double Spawn** | Tuer un mob en fait apparaitre deux autres au hasard. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/wqaonkB54Y4) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/doublespawn-v1.0.0/JusOpa-DoubleSpawn-1.0.0.jar) |
 | 💨 **Block Vanish** | Casser un bloc efface TOUS les blocs du meme type dans le monde. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/q1Xc1Cicu3s) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockvanish-v1.0.0/JusOpa-BlockVanish-1.0.0.jar) |
 | 🧱 **Block Under You** | Le bloc que tu tiens se pose sous tes pieds. Tu ne peux plus tomber, et le monde grouille de mobs. | `1.1.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/1UhiEIShHX8) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.1.0/JusOpa-BlockUnderYou-1.1.0.jar) |
+| ⬛ **Bedrock Chunk** | Casser un bloc petrifie tout le chunk en bedrock. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/LIpZI3sQEtc) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/bedrockchunk-v1.0.0/JusOpa-BedrockChunk-1.0.0.jar) |
+| 🔄 **Inverted** | Toutes les regles de base du jeu sont inversees. | `1.0.0` | `26.1.2` | [voir](https://www.youtube.com/shorts/QEGcMTPwnaE) | [.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/inverted-v1.0.0/JusOpa-Inverted-1.0.0.jar) |
 
 ## Installation
 
@@ -68,6 +70,22 @@ Depuis la 1.1.0, le monde est aussi bien plus peuple : 3 golems dans un village 
 - Version `1.1.0` pour Minecraft `26.1.2` (Fabric)
 - Short : https://www.youtube.com/shorts/1UhiEIShHX8
 - [Telecharger JusOpa-BlockUnderYou-1.1.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/blockunderyou-v1.1.0/JusOpa-BlockUnderYou-1.1.0.jar)
+
+### ⬛ Bedrock Chunk
+
+Tu casses un bloc, et le chunk entier devient de la bedrock, du ciel au fond. L'air reste de l'air et l'eau reste de l'eau : les grottes gardent leur vide et tu ne peux pas etre enseveli. Les blocs traverses par un joueur sont epargnes. Tout se regle dans config/bedrockchunk.json, y compris la version pleine qui petrifie aussi l'air.
+
+- Version `1.0.0` pour Minecraft `26.1.2` (Fabric)
+- Short : https://www.youtube.com/shorts/LIpZI3sQEtc
+- [Telecharger JusOpa-BedrockChunk-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/bedrockchunk-v1.0.0/JusOpa-BedrockChunk-1.0.0.jar)
+
+### 🔄 Inverted
+
+Treize regles de base inversees. L'eau brule, la lave est inoffensive. Les zombies brulent la nuit. Les monstres apparaissent dans la lumiere, donc une torche les attire. Les poissons vivent sur terre. On mine a mains nues. Les lits explosent dans l'Overworld. La TNT et les creepers enferment au lieu de creuser. Les blazes lachent des perles de l'End. Le lait empoisonne et l'or enrage les piglins.
+
+- Version `1.0.0` pour Minecraft `26.1.2` (Fabric)
+- Short : https://www.youtube.com/shorts/QEGcMTPwnaE
+- [Telecharger JusOpa-Inverted-1.0.0.jar](https://github.com/PierreGaudard/JusOpa-Mods/releases/download/inverted-v1.0.0/JusOpa-Inverted-1.0.0.jar)
 
 ---
 
