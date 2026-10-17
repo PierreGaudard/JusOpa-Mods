@@ -103,9 +103,9 @@
       "description": "Le premier bloc casse fait apparaitre un lyceen, le deuxieme deux, le troisieme trois. Ils ne brulent pas au soleil, ne disparaissent jamais et se teleportent pour te rattraper. Plafond a 100.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/yZ1EH9FQzEs",
       "jar": "JusOpa-Lyceens-1.0.0.jar",
-      "listed": false
+      "listed": true
     },
     {
       "id": "nowayback",
@@ -116,9 +116,9 @@
       "description": "Un pas en avant et une colonne de pierre de 20 blocs jaillit a l'endroit que tu viens de quitter. Tu ne meurs pas : le danger, c'est de t'enfermer tout seul.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/ECKv78OPaq8",
       "jar": "JusOpa-NoWayBack-1.0.0.jar",
-      "listed": false
+      "listed": true
     },
     {
       "id": "touchtnt",
@@ -129,9 +129,9 @@
       "description": "Le sol sous tes pieds, les murs que tu froles, le bloc que tu frappes : tout devient de la TNT. Elle n'est pas allumee, elle attend. Un briquet suffit.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/SGfgh69fO3A",
       "jar": "JusOpa-TouchTNT-1.0.0.jar",
-      "listed": false
+      "listed": true
     },
     {
       "id": "giantworld",
@@ -142,9 +142,9 @@
       "description": "Tu passes a un seizieme de ta taille : un bloc de terre te depasse de seize fois, un poulet fait la taille d'une maison. Les autres joueurs peuvent garder leur taille normale et devenir les geants.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/YWXHB7CDv8M",
       "jar": "JusOpa-GiantWorld-1.0.0.jar",
-      "listed": false
+      "listed": true
     },
     {
       "id": "inverted",
@@ -168,8 +168,125 @@
       "description": "Tu casses une pierre : c'etait la seule pierre que tu casseras jamais. Toute la pierre du monde devient incassable, pour toujours. Puis le chene, puis la terre. Chaque coup de pioche devient une decision.",
       "version": "1.0.0",
       "mc": "26.1.2",
-      "short": "",
+      "short": "https://www.youtube.com/shorts/WcIkz9io960",
       "jar": "JusOpa-BreakOnce-1.0.0.jar",
+      "listed": true
+    },
+    {
+      "id": "doghearts",
+      "dir": "DogHearts",
+      "name": "Dog Hearts",
+      "emoji": "🐶",
+      "tagline": "Dix chiens, dix coeurs. Un chien mort est un coeur perdu pour toujours.",
+      "description": "Ta vie maximale vaut exactement le nombre de chiens qui te suivent. Ils se teleportent pour ne jamais te perdre, tu ne peux pas les faire asseoir, et quand le dernier tombe tu meurs avec lui.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-DogHearts-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "shearanymob",
+      "dir": "ShearAnyMob",
+      "name": "Shear Any Mob",
+      "emoji": "✂️",
+      "tagline": "Une tondeuse a gazon qui marche sur tout ce qui bouge.",
+      "description": "Chaque passage de tondeuse arrache du butin a la creature et la rapetisse d'un cran. Au cran de trop, elle meurt. Un villageois tondu donne des emeraudes sans mourir, donc on tond tout le village.",
+      "version": "1.1.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-ShearAnyMob-1.1.0.jar",
+      "listed": false
+    },
+    {
+      "id": "frozentime",
+      "dir": "FrozenTime",
+      "name": "Frozen Time",
+      "emoji": "⏸️",
+      "tagline": "Le monde ne bouge que quand tu bouges.",
+      "description": "Tu t'arretes, tout s'arrete : les mobs en pleine course, la fleche en vol, le feu, l'eau, le temps. Tu peux casser et poser des blocs a l'arret, donc murer un zombie fige fait partie du jeu.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-FrozenTime-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "chunkboss",
+      "dir": "ChunkBoss",
+      "name": "Chunk Boss",
+      "emoji": "👑",
+      "tagline": "Chaque chunk a son boss, et tu ne sors pas avant de l'avoir tue.",
+      "description": "A l'entree d'un chunk neuf, une creature est tiree au hasard dans tout le bestiaire et apparait avec sa barre de boss. Tant qu'elle vit, la bordure du chunk te repousse. Elle meurt, un coffre tombe, et le chunk reste ouvert pour toujours.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-ChunkBoss-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "paywall",
+      "dir": "Paywall",
+      "name": "Paywall",
+      "emoji": "💸",
+      "tagline": "Marcher, miner, poser, sauter : tout est payant, et tu commences endette.",
+      "description": "Les trois premieres capacites sont prises a credit, donc la partie s'ouvre sur une dette de 35. Chaque geste fait descendre le compteur. L'argent se fabrique avec des emeraudes a un taux ridicule, et le braquage du village devient la seule strategie viable.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-Paywall-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "speedrundeath",
+      "dir": "SpeedrunDeath",
+      "name": "Speedrun Death",
+      "emoji": "⏱️",
+      "tagline": "500 coeurs, et le but est de mourir le plus vite possible.",
+      "description": "Une commande donne a chacun une montagne de vie et lance le chrono. Une barre par joueur, un chrono a l'ecran, et le classement a la fin. Le premier mort gagne.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-SpeedrunDeath-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "timeloop",
+      "dir": "TimeLoop",
+      "name": "Time Loop",
+      "emoji": "🔄",
+      "tagline": "Toutes les 30 secondes, le monde revient en arriere et une copie de toi rejoue la boucle.",
+      "description": "Les blocs casses repoussent, les blocs poses disparaissent, tu es renvoye au point de depart, et un fantome rejoue geste pour geste ce que tu viens de faire. Les copies s'accumulent, et elles te bloquent le passage.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-TimeLoop-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "organs",
+      "dir": "Organs",
+      "name": "Organs",
+      "emoji": "🫀",
+      "tagline": "Un scalpel qui prend les organes de n'importe quelle creature.",
+      "description": "Clic droit avec le scalpel pour prendre un organe, clic droit avec l'organe pour se le greffer. Chaque greffe donne un effet permanent, et au-dela de cinq le corps rejette et tu perds de la vie en continu.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-Organs-1.0.0.jar",
+      "listed": false
+    },
+    {
+      "id": "bigmobs",
+      "dir": "BigMobs",
+      "name": "Big Mobs",
+      "emoji": "💪",
+      "tagline": "Frapper un monstre ne lui fait pas mal : ca le fait grossir.",
+      "description": "Chaque coup le grandit d'un tiers, lui donne plus de vie et plus de force. Un zombie frappe quatre fois ne passe plus dans le tunnel que tu viens de creuser. La croissance s'arrete a cinq fois la taille normale : au-dela, les coups redeviennent des coups.",
+      "version": "1.0.0",
+      "mc": "26.1.2",
+      "short": "",
+      "jar": "JusOpa-BigMobs-1.0.0.jar",
       "listed": false
     }
   ]

@@ -3,3 +3,5 @@ index_message.txt
 messages.json
 *.jar
 __pycache__/
+webhook-prive.txt
+max-id.txt
